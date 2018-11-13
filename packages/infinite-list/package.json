@@ -52,7 +52,7 @@
     "jest": "^23.1.0",
     "markdown-loader-jest": "^0.1.1",
     "react": "^16.6.3",
-    "react-dom": "^16.5.0",
+    "react-dom": "^16.6.3",
     "react-jss": "^8.6.1",
     "react-test-renderer": "^16.5.0",
     "rimraf": "^2.6.2",
