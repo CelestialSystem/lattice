@@ -34,7 +34,7 @@
     "@latticejs/lattice-scripts": "^1.0.1-beta.1",
     "@latticejs/storybook-readme": "^1.0.1-beta.0",
     "@material-ui/core": "^3.9.0",
-    "@material-ui/icons": "^3.0.1",
+    "@material-ui/icons": "^3.0.2",
     "@sambego/storybook-state": "^1.2.0",
     "@storybook/addon-actions": "^4.0.2",
     "@storybook/addon-storyshots": "^4.0.2",
