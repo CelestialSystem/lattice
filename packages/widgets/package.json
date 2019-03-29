@@ -54,7 +54,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-jss": "^8.6.1",
-    "react-test-renderer": "^16.5.0",
+    "react-test-renderer": "^16.8.6",
     "react-virtualized": "^9.19.1",
     "rimraf": "^2.6.2"
   },
