@@ -110,7 +110,7 @@ class App extends Component {
       })
     );
 
-    mapObj.on('render', function(evt) {
+    mapObj.on('load', function(evt) {
       let layers = ['country-label-lg', 'place-city-sm'];
       layers.map(layer => {
         mapObj.setLayoutProperty(layer, 'text-field', [
@@ -124,6 +124,7 @@ class App extends Component {
         return null;
       });
 
+      //Show the population of USA'
       var zoomThreshold = 4;
       mapObj.addLayer(
         {
@@ -260,75 +261,73 @@ class App extends Component {
         <TabPanel value={this.state.selectedTab} index={2}>
           <Grid>
             <LatticeMap
-              //-98, 38.88
-              //30.0222, -1.9596
               longitude={-98}
               latitude={38.88}
               minZoom={3}
               zoom={3}
               accessToken={token}
               afterMapComplete={this.afterMapLoad}
-              height={91}
+              height={75}
               width={100}
             />
             <div id="state-legend" className="legend">
               <h4>Population</h4>
               <div>
-                <span style={{ 'background-color': '#723122' }}></span>25,000,000
+                <span style={{ 'backgroundColor': '#723122' }}></span>25,000,000
               </div>
               <div>
-                <span style={{ 'background-color': '#8B4225' }}></span>10,000,000
+                <span style={{ 'backgroundColor': '#8B4225' }}></span>10,000,000
               </div>
               <div>
-                <span style={{ 'background-color': '#A25626' }}></span>7,500,000
+                <span style={{ 'backgroundColor': '#A25626' }}></span>7,500,000
               </div>
               <div>
-                <span style={{ 'background-color': '#B86B25' }}></span>5,000,000
+                <span style={{ 'backgroundColor': '#B86B25' }}></span>5,000,000
               </div>
               <div>
-                <span style={{ 'background-color': '#CA8323' }}></span>2,500,000
+                <span style={{ 'backgroundColor': '#CA8323' }}></span>2,500,000
               </div>
               <div>
-                <span style={{ 'background-color': '#DA9C20' }}></span>1,000,000
+                <span style={{ 'backgroundColor': '#DA9C20' }}></span>1,000,000
               </div>
               <div>
-                <span style={{ 'background-color': '#E6B71E' }}></span>750,000
+                <span style={{ 'backgroundColor': '#E6B71E' }}></span>750,000
               </div>
               <div>
-                <span style={{ 'background-color': '#EED322' }}></span>500,000
+                <span style={{ 'backgroundColor': '#EED322' }}></span>500,000
               </div>
               <div>
-                <span style={{ 'background-color': '#F2F12D' }}></span>0
+                <span style={{ 'backgroundColor': '#F2F12D' }}></span>0
               </div>
             </div>
             <div id="county-legend" className="legend" style={{ display: 'none' }}>
               <h4>Population</h4>
               <div>
-                <span style={{ 'background-color': '#723122' }}></span>1,000,000
+                <span style={{ 'backgroundColor': '#723122' }}></span>1,000,000
               </div>
               <div>
-                <span style={{ 'background-color': '#8B4225' }}></span>500,000
+                <span style={{ 'backgroundColor': '#8B4225' }}></span>500,000
               </div>
               <div>
-                <span style={{ 'background-color': '#A25626' }}></span>100,000
+                <span style={{ 'backgroundColor': '#A25626' }}></span>100,000
               </div>
               <div>
-                <span style={{ 'background-color': '#B86B25' }}></span>50,000
+                <span style={{ 'backgroundColor': '#B86B25' }}></span>50,000
               </div>
               <div>
-                <span style={{ 'background-color': '#CA8323' }}></span>10,000
+                <span style={{ 'backgroundColor': '#CA8323' }}></span>10,000
               </div>
               <div>
-                <span style={{ 'background-color': '#DA9C20' }}></span>5,000
+                <span style={{ 'backgroundColor': '#DA9C20' }}></span>5,000
               </div>
               <div>
-                <span style={{ 'background-color': '#E6B71E' }}></span>1,000
+                <span style={{ 'backgroundColor': '#E6B71E' }}></span>1,000
               </div>
               <div>
-                <span style={{ 'background-color': '#EED322' }}></span>100
+                <span style={{ 'backgroundColor': '#EED322' }}></span>100
               </div>
               <div>
-                <span style={{ 'background-color': '#F2F12D' }}></span>0
+                <span style={{ 'backgroundColor': '#F2F12D' }}></span>0
               </div>
             </div>
           </Grid>
