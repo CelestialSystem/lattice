@@ -67,3 +67,27 @@ decorate(Dialogs, {
   stack: observable,
   close: action,
 });
+
+// export class Dialogs extends RootStore {
+//   stack = [];
+
+//   showConfirm(options) {
+//     console.log("OPTIONS",options);
+//     console.log("CONFIRM-DIALOG",new ConfirmDialog(options));
+//     this.stack.push(new ConfirmDialog(options));
+//     console.log("SHOWCONFIRM",this.stack[0]);
+//   }
+
+//   close(id) {
+//     console.log("STACK",id);
+//     // const index = this.stack.findIndex((dialog) => dialog.id === id);
+//     const index = this.stack.findIndex((dialog) => dialog.id === id);
+//     console.log("INDEX",index);
+//     this.stack.splice(index, 1);
+//   }
+// }
+
+// decorate(Dialogs, {
+//   stack: observable,
+//   close: action,
+// });

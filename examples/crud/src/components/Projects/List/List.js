@@ -75,3 +75,86 @@ export default compose(
   }),
   observer
 )(List);
+
+// eslint-disable-next-line prettier/prettier
+
+// import React, { useState } from 'react';
+// import { observer, inject } from 'mobx-react';
+// import { List as InfiniteList, ListItem } from '@latticejs/infinite-list';
+// import { withStyles, ListItemText } from '@material-ui/core';
+// import ProjectItem from './Item';
+
+// eslint-disable-next-line prettier/prettier
+
+// const styles = () => ({
+//   containerRoot: {
+//     flex: 1,
+//     height: '100%',
+//   },
+//   listRoot: {
+//     flex: 1,
+//     height: '100%',
+//   },
+// });
+
+// eslint-disable-next-line prettier/prettier
+
+// const List1 = (props) => {
+// eslint-disable-next-line prettier/prettier
+  
+//   const [loadMoreTO, setLoadMoreTO] = useState(null);
+
+//   const { classes, uiStore, onEditProject } = props;
+//   const { availableItems, list } = uiStore.projectList;
+
+//   const findItem = ( uiStore ) => ( index ) => {
+//     console.log("lalala",availableItems);
+//     return uiStore.projectList.getItem(index);
+//   }
+
+//   const loadMore = ( uiStore ) => async ( stopIndex ) => {
+//     if (loadMoreTO) {
+//       clearTimeout(loadMoreTO);
+//     }
+
+//     setLoadMoreTO(
+//       setTimeout(() => {
+//         uiStore.projectList.availableItems = Math.max(uiStore.projectList.availableItems, stopIndex + 1);
+//       }, Math.floor(Math.random() * 1000))
+//     );
+//   }
+
+//   return (
+//     <InfiniteList
+//       loadMore={loadMore(uiStore)}
+//       findItem={findItem(uiStore)}
+//       list={list.slice(0, availableItems)}
+//       rowCount={list.length}
+//       rowHeight={55}
+//       classes={{ root: classes.listRoot }}
+//     >
+//       {({ item, isEmpty, key, style }) => {
+//         if (isEmpty) {
+//           return (
+//             <ListItem key={key} style={style}>
+//               <ListItemText primary="No projects to show" />
+//             </ListItem>
+//           );
+//         }
+
+//         if (!item) {
+//           return (
+//             <ListItem key={key} style={style}>
+//               <ListItemText primary="loading..." />
+//             </ListItem>
+//           );
+//         }
+
+//         return <ProjectItem projectId={item} key={key} style={style} onEdit={onEditProject} />;
+//       }}
+//     </InfiniteList>
+//   );
+// };
+
+// const List =  withStyles(styles)(List1);
+// export default inject('uiStore','projectStore')(observer(List));
