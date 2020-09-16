@@ -103,7 +103,6 @@ class ConfirmDialog extends Component {
 
   render() {
     const { id, title, content, onClose, onAccept, onCancel, acceptText, cancelText, classes, uiStore } = this.props;
-    console.log('PROPS', onAccept);
     return (
       <Dialog onClose={this.close(uiStore, id, onClose)} aria-labelledby={id} open={true} classes={classes}>
         <DialogTitle id={id}>{title}</DialogTitle>
