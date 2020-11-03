@@ -27,7 +27,7 @@
     "react-dom": "^16.13.1",
     "recharts": "^1.8.5",
     "recompose": "^0.30.0",
-    "react-smooth": "1.0.2"
+    "react-smooth": "1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
