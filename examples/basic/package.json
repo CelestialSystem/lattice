@@ -18,7 +18,7 @@
     "@material-ui/icons": "^4.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "typeface-roboto": "^0.0.54"
+    "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
     "react-scripts": "^1.1.0"
