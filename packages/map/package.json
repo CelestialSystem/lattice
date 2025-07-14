@@ -52,7 +52,7 @@
     "storybook-readme": "^4.0.5"
   },
   "dependencies": {
-    "@mapbox/mapbox-gl-geocoder": "^4.5.0",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.0",
     "mapbox-gl": "1.5.0"
   },
   "jest": {
